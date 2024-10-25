@@ -1,41 +1,27 @@
-<<<<<<< HEAD
-# bruh1
-flock
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Flock.io hackathon thing
 
-First, run the development server:
+<!--toc:start-->
+- [Flock.io hackathon thing](#flockio-hackathon-thing)
+  - [Run](#run)
+  - [Wtf are we doing](#wtf-are-we-doing)
+<!--toc:end-->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Run
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run, execute ``npm run dev`` on the command line.
+The web app will host itself on [http://localhost:3000](localhost).
+There's no need to restart the command as it will update *automatically*.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Wtf are we doing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tony: idk
+Saul: idk
+Luke: idk
+Luke: idk
+Phoebe: idk
+James: idk
 
-## Learn More
+## Contribution
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 497c6be (Initial commit from Create Next App)
+Let me know if you want to do something with the repo and don't know how!!
