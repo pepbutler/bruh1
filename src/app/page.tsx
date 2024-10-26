@@ -2,6 +2,7 @@ import Link from "next/link"
 import {
   Activity,
   ArrowUpRight,
+  BadgeInfo,
   CircleUser,
   CreditCard,
   DollarSign,
@@ -168,7 +169,7 @@ export default function Dashboard() {
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">$19,331.20</div>
+              <div className="text-2xl font-bold">$1950.00</div>
             </CardContent>
           </Card>
           <Card x-chunk="A card showing the total subscriptions and the percentage difference from last month.">
@@ -179,7 +180,7 @@ export default function Dashboard() {
               <Users className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+2350</div>
+              <div className="text-2xl font-bold">3</div>
             </CardContent>
           </Card>
           <Card x-chunk="A card showing the total sales and the percentage difference from last month.">
@@ -188,13 +189,13 @@ export default function Dashboard() {
               <CreditCard className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+12,234</div>
+              <div className="text-2xl font-bold">5</div>
             </CardContent>
           </Card>
         </div>
         <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
           <Card
-            className="xl:col-span-2"
+            className="xl:col-span-2 max-h-screen overflow-y-auto"
             x-chunk="A card showing a table of recent transactions with a link to view all transactions."
           >
             <CardHeader className="flex flex-row items-center">
@@ -233,7 +234,7 @@ export default function Dashboard() {
                     <TableCell>
                       <div className="font-medium">1022</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        model1
+                        Movie Explosion Custscene
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -273,7 +274,7 @@ export default function Dashboard() {
                     <TableCell>
                       <div className="font-medium">1220</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        model2
+                        Sad Cat Generator
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -293,7 +294,7 @@ export default function Dashboard() {
                     <TableCell>
                       <div className="font-medium">1398</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        model1
+                        Movie Explosion Custscene
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -313,7 +314,7 @@ export default function Dashboard() {
                     <TableCell>
                       <div className="font-medium">1992</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        model1
+                        Movie Explosion Custscene
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -333,85 +334,39 @@ export default function Dashboard() {
               </Table>
             </CardContent>
           </Card>
-          <Card x-chunk="A card showing a list of recent sales with customer names and email addresses.">
+          <Card className="max-h-screen overflow-y-auto" x-chunk="A card showing a list of recent sales with customer names and email addresses.">
             <CardHeader>
               <CardTitle>Models</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-8">
-              <div className="flex items-center gap-4">
-                <Avatar className="hidden h-9 w-9 sm:flex">
-                  <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                  <AvatarFallback>OM</AvatarFallback>
-                </Avatar>
-                <div className="grid gap-1">
-                  <p className="text-sm font-medium leading-none">
-                    Olivia Martin
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    olivia.martin@email.com
-                  </p>
-                </div>
-                <div className="ml-auto font-medium">+$1,999.00</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Avatar className="hidden h-9 w-9 sm:flex">
-                  <AvatarImage src="/avatars/02.png" alt="Avatar" />
-                  <AvatarFallback>JL</AvatarFallback>
-                </Avatar>
-                <div className="grid gap-1">
-                  <p className="text-sm font-medium leading-none">
-                    Jackson Lee
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    jackson.lee@email.com
-                  </p>
-                </div>
-                <div className="ml-auto font-medium">+$39.00</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Avatar className="hidden h-9 w-9 sm:flex">
-                  <AvatarImage src="/avatars/03.png" alt="Avatar" />
-                  <AvatarFallback>IN</AvatarFallback>
-                </Avatar>
-                <div className="grid gap-1">
-                  <p className="text-sm font-medium leading-none">
-                    Isabella Nguyen
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    isabella.nguyen@email.com
-                  </p>
-                </div>
-                <div className="ml-auto font-medium">+$299.00</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Avatar className="hidden h-9 w-9 sm:flex">
-                  <AvatarImage src="/avatars/04.png" alt="Avatar" />
-                  <AvatarFallback>WK</AvatarFallback>
-                </Avatar>
-                <div className="grid gap-1">
-                  <p className="text-sm font-medium leading-none">
-                    William Kim
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    will@email.com
-                  </p>
-                </div>
-                <div className="ml-auto font-medium">+$99.00</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Avatar className="hidden h-9 w-9 sm:flex">
-                  <AvatarImage src="/avatars/05.png" alt="Avatar" />
-                  <AvatarFallback>SD</AvatarFallback>
-                </Avatar>
-                <div className="grid gap-1">
-                  <p className="text-sm font-medium leading-none">
-                    Sofia Davis
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    sofia.davis@email.com
-                  </p>
-                </div>
-                <div className="ml-auto font-medium">+$39.00</div>
+              <div className="grid gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-1">
+                <Card className="p-4">
+                  <CardTitle className="py-4">Movie Explosion Cutscene</CardTitle>
+                  <CardContent>This model provides a way to generate cool explosion cutscenes. Contribute if you'd like at <code>discord #exposion-contrib</code></CardContent>
+                  <div className="border-t border-gray-300 mb-4" />
+                  <Badge className="bg-gray-600 mx-1">Convolutional Neural Network</Badge>
+                  <Badge className="bg-gray-600 mx-1">Video</Badge>
+                  <Badge className="bg-red-900 mx-1">Resource Heavy</Badge>
+                  <Badge className="bg-green-900 mx-1">Finished</Badge>
+                </Card>
+                <Card className="p-4">
+                  <CardTitle className="py-4">Sad Cat Generator</CardTitle>
+                  <CardContent>Make sad cat faces online. :(</CardContent>
+                  <div className="border-t border-gray-300 mb-4" />
+                  <Badge className="bg-gray-600 mx-1">Stable Diffusion</Badge>
+                  <Badge className="bg-gray-600 mx-1">Image</Badge>
+                  <Badge className="bg-gray-600 mx-1">Task running</Badge>
+                  <Badge className="bg-blue-100 mx-1">Unfinished</Badge>
+                </Card>
+                <Card className="p-4">
+                  <CardTitle className="py-4">model3</CardTitle>
+                  <CardContent>This is a description of a generic model which can be configured using the 'train' page on the top bar.</CardContent>
+                  <div className="border-t border-gray-300 mb-4" />
+                  <Badge className="bg-gray-600 mx-1">Transformer</Badge>
+                  <Badge className="bg-gray-600 mx-1">Natural Language Processing</Badge>
+                  <Badge className="bg-red-900 mx-1">Resource Heavy</Badge>
+                  <Badge className="bg-blue-100 mx-1">Unfinished</Badge>
+                </Card>
               </div>
             </CardContent>
           </Card>
