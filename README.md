@@ -5,6 +5,7 @@
 - [Flock.io hackathon thing](#flockio-hackathon-thing)
   - [Run](#run)
   - [Wtf are we doing](#wtf-are-we-doing)
+  - [Contribution](#contribution)
 <!--toc:end-->
 
 ## Run
@@ -15,12 +16,12 @@ There's no need to restart the command as it will update *automatically*.
 
 ## Wtf are we doing
 
-Tony: idk
-Saul: idk
-Luke: idk
-Luke: idk
-Phoebe: idk
-James: idk
+- Tony: idk
+- Saul: idk
+- Luke: idk
+- Luke: idk
+- Phoebe: idk
+- James: idk
 
 ## Contribution
 
