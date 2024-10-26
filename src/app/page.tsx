@@ -74,7 +74,7 @@ export default function Dashboard() {
             Tasks
           </Link>
           <Link
-            href="#"
+            href="/train"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Train
@@ -151,7 +151,8 @@ export default function Dashboard() {
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Settings</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/settings">Settings</Link> </DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Logout</DropdownMenuItem>
@@ -163,7 +164,7 @@ export default function Dashboard() {
         <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           <Card x-chunk="A card showing the total revenue in USD and the percentage difference from last month.">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium"> Total Staked</CardTitle>
+              <CardTitle className="text-sm font-medium">Total Staked</CardTitle>
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
