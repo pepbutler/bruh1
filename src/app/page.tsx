@@ -65,25 +65,19 @@ export default function Dashboard() {
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Orders
+            Models
           </Link>
           <Link
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Products
+            Tasks
           </Link>
           <Link
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Customers
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Analytics
+            Train
           </Link>
         </nav>
         <Sheet>
@@ -166,57 +160,34 @@ export default function Dashboard() {
         </div>
       </header>
       <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-        <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           <Card x-chunk="A card showing the total revenue in USD and the percentage difference from last month.">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Total Revenue
-              </CardTitle>
+              <CardTitle className="text-sm font-medium"> Total Staked</CardTitle>
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">$45,231.89</div>
-              <p className="text-xs text-muted-foreground">
-                +20.1% from last month
-              </p>
+              <div className="text-2xl font-bold">$19,331.20</div>
             </CardContent>
           </Card>
           <Card x-chunk="A card showing the total subscriptions and the percentage difference from last month.">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
-                Subscriptions
+                Models
               </CardTitle>
               <Users className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">+2350</div>
-              <p className="text-xs text-muted-foreground">
-                +180.1% from last month
-              </p>
             </CardContent>
           </Card>
           <Card x-chunk="A card showing the total sales and the percentage difference from last month.">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Sales</CardTitle>
+              <CardTitle className="text-sm font-medium">Tasks</CardTitle>
               <CreditCard className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">+12,234</div>
-              <p className="text-xs text-muted-foreground">
-                +19% from last month
-              </p>
-            </CardContent>
-          </Card>
-          <Card x-chunk="A card showing the total active users and the percentage difference from last hour.">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Active Now</CardTitle>
-              <Activity className="h-4 w-4 text-muted-foreground" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">+573</div>
-              <p className="text-xs text-muted-foreground">
-                +201 since last hour
-              </p>
             </CardContent>
           </Card>
         </div>
@@ -227,9 +198,9 @@ export default function Dashboard() {
           >
             <CardHeader className="flex flex-row items-center">
               <div className="grid gap-2">
-                <CardTitle>Transactions</CardTitle>
+                <CardTitle>Tasks</CardTitle>
                 <CardDescription>
-                  Recent transactions from your store.
+                  Recent tasks
                 </CardDescription>
               </div>
               <Button asChild size="sm" className="ml-auto gap-1">
@@ -243,7 +214,7 @@ export default function Dashboard() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>Customer</TableHead>
+                    <TableHead>Task ID</TableHead>
                     <TableHead className="hidden xl:table-column">
                       Type
                     </TableHead>
@@ -253,15 +224,15 @@ export default function Dashboard() {
                     <TableHead className="hidden xl:table-column">
                       Date
                     </TableHead>
-                    <TableHead className="text-right">Amount</TableHead>
+                    <TableHead className="text-right">Stake</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
                     <TableCell>
-                      <div className="font-medium">Liam Johnson</div>
+                      <div className="font-medium">1022</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        liam@example.com
+                        model1
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -279,9 +250,9 @@ export default function Dashboard() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <div className="font-medium">Olivia Smith</div>
+                      <div className="font-medium">1023</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        olivia@example.com
+                        model3
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -299,9 +270,9 @@ export default function Dashboard() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <div className="font-medium">Noah Williams</div>
+                      <div className="font-medium">1220</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        noah@example.com
+                        model2
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -319,9 +290,9 @@ export default function Dashboard() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <div className="font-medium">Emma Brown</div>
+                      <div className="font-medium">1398</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        emma@example.com
+                        model1
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -339,9 +310,9 @@ export default function Dashboard() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <div className="font-medium">Liam Johnson</div>
+                      <div className="font-medium">1992</div>
                       <div className="hidden text-sm text-muted-foreground md:inline">
-                        liam@example.com
+                        model1
                       </div>
                     </TableCell>
                     <TableCell className="hidden xl:table-column">
@@ -363,7 +334,7 @@ export default function Dashboard() {
           </Card>
           <Card x-chunk="A card showing a list of recent sales with customer names and email addresses.">
             <CardHeader>
-              <CardTitle>Recent Sales</CardTitle>
+              <CardTitle>Models</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-8">
               <div className="flex items-center gap-4">
